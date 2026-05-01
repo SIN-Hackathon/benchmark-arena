@@ -1,0 +1,100 @@
+{
+  "agents": {
+    "hermes": {
+      "role": "Dispatcher/Executor",
+      "tools": ["langgraph", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["agentic_workflows", "swe_bench_pro"],
+      "responsibilities": [
+        "Task-Verteilung",
+        "Workflow-Orchestrierung",
+        "Ergebnis-Konsolidierung"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1"]
+    },
+    "prometheus": {
+      "role": "System Planner",
+      "tools": ["langgraph", "opencode"],
+      "output_format": "yaml",
+      "benchmarks": ["swe_bench_pro", "agentic_workflows"],
+      "responsibilities": [
+        "Architektur-Design",
+        "Lang-horizontale Planung",
+        "Feedback-Loop-Design"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1", "Qwen 3.6 Max"]
+    },
+    "zeus": {
+      "role": "Validation Superlayer",
+      "tools": ["opencode", "security-tools"],
+      "output_format": "json",
+      "benchmarks": ["swe_bench_pro", "agentic_workflows"],
+      "responsibilities": [
+        "Kritische Review",
+        "Security-Audits",
+        "Future-proofing"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1"]
+    },
+    "atlas": {
+      "role": "Backend Engineer",
+      "tools": ["docker", "pytest", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["swe_bench_mini", "humaneval_x", "swe_bench_pro"],
+      "responsibilities": [
+        "Backend-Entwicklung",
+        "API-Design",
+        "Datenbank-Schema"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1", "Qwen 3.6 Max"]
+    },
+    "iris": {
+      "role": "Frontend Engineer",
+      "tools": ["selenium", "playwright", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["miniwob", "agentic_workflows"],
+      "responsibilities": [
+        "Frontend-Entwicklung",
+        "UI/UX-Implementierung",
+        "Interaktive Tests"
+      ],
+      "recommended_models": ["Qwen 3.6 Max", "Mistral Small 4"]
+    },
+    "janus": {
+      "role": "API Architect",
+      "tools": ["postman", "pytest", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["swe_bench_mini", "humaneval_x", "swe_bench_pro"],
+      "responsibilities": [
+        "API-Design",
+        "Integration",
+        "Testing"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1", "Qwen 3.6 Max"]
+    },
+    "hades": {
+      "role": "Database Architect",
+      "tools": ["docker", "sqlalchemy", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["swe_bench_mini", "sql_benchmarks"],
+      "responsibilities": [
+        "Datenbank-Design",
+        "Migration",
+        "Optimierung"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1", "Qwen 3.6 Max"]
+    },
+    "asclepius": {
+      "role": "QA / Testing",
+      "tools": ["pytest", "selenium", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["swe_bench_mini", "humaneval_x", "swe_bench_pro"],
+      "responsibilities": [
+        "Automatisierte Tests",
+        "Edge Cases",
+        "Code-Qualität"
+      ],
+      "recommended_models": ["DeepSeek V4-Pro", "GLM-5.1", "Qwen 3.6 Max"]
+    }
+  }
+}
