@@ -1,0 +1,160 @@
+{
+  "agents": {
+    "athena": {
+      "role": "Strategic Researcher",
+      "tools": ["webauto", "google_search", "opencode", "vector-db"],
+      "output_format": "json",
+      "benchmarks": ["marktanalyse", "trends"],
+      "responsibilities": [
+        "High-Level Research",
+        "Marktanalyse",
+        "Trend-Identifikation"
+      ],
+      "recommended_tools": ["webauto", "google_search", "vector-db"]
+    },
+    "argus": {
+      "role": "Multi-Source Researcher",
+      "tools": ["webauto", "google_search", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["web_recherche", "foren", "social_media"],
+      "responsibilities": [
+        "Web-Recherche",
+        "Foren & Social Media",
+        "Quellen-Sammlung"
+      ]
+    },
+    "daedalus": {
+      "role": "Technical Researcher",
+      "tools": ["ast-grep", "lsp", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["code_review", "architektur_review"],
+      "responsibilities": [
+        "Code-Analyse",
+        "Architektur-Reviews",
+        "Technische Dokumentation"
+      ]
+    },
+    "hermes_scout": {
+      "role": "Fast Retriever",
+      "tools": ["webauto", "api-calls", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["retrieval", "api_integration"],
+      "responsibilities": [
+        "Schnelle Datenabfragen",
+        "API-Integration",
+        "Retrieval"
+      ]
+    },
+    "multimedia_looker": {
+      "role": "Vision/GUI Looker",
+      "tools": ["opencode-vision", "selenium", "docker", "vision-gate"],
+      "output_format": "json",
+      "benchmarks": ["vision_gui_grounding", "screen_spot", "mmmu_pro"],
+      "responsibilities": [
+        "Screenshots analysieren",
+        "GUI-Elemente erkennen",
+        "Vision-Tasks"
+      ],
+      "recommended_models": ["Mimo V2.5 Pro", "Magistral Medium 1.2", "Meta Llama 3.2 11B Vision Instruct"],
+      "model_config": {
+        "vision_encoder": "ViT-L/14",
+        "context_window": "1M",
+        "output_tokens": 131072
+      }
+    },
+    "audio_agent": {
+      "role": "Audio TTS/SST",
+      "tools": ["whisper", "coqui-tts", "ffmpeg"],
+      "output_format": "json",
+      "benchmarks": ["audio_tts_sst", "wer", "mos"],
+      "responsibilities": [
+        "Sprache → Text (SST)",
+        "Text → Sprache (TTS)",
+        "Audio-Transkription"
+      ],
+      "recommended_models": ["Whisper-Large-v3", "Coqui TTS", "MiniMax M2.5"]
+    },
+    "web_recherche_agent": {
+      "role": "Web Research",
+      "tools": ["webauto", "google_search", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["web_recherche"],
+      "responsibilities": [
+        "Google-Recherche",
+        "Foren & Social Media",
+        "Tiefen-Recherche"
+      ]
+    },
+    "metis": {
+      "role": "Optimization Planner",
+      "tools": ["langgraph", "opencode"],
+      "output_format": "yaml",
+      "benchmarks": ["performance_optimierung"],
+      "responsibilities": [
+        "Effizienz-Optimierung",
+        "Ressourcen-Management"
+      ]
+    },
+    "themis": {
+      "role": "Constraint Planner",
+      "tools": ["langgraph", "opencode"],
+      "output_format": "yaml",
+      "benchmarks": ["security", "compliance"],
+      "responsibilities": [
+        "Regeln, Limits",
+        "Security, Compliance",
+        "Legal"
+      ]
+    },
+    "apollo": {
+      "role": "UX/Product Planner",
+      "tools": ["selenium", "playwright", "opencode"],
+      "output_format": "yaml",
+      "benchmarks": ["ux_testing"],
+      "responsibilities": [
+        "Nutzerperspektive",
+        "UX-Design"
+      ]
+    },
+    "aegis": {
+      "role": "Security Auditor",
+      "tools": ["security-tools", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["security_audits", "penetration_testing"],
+      "responsibilities": [
+        "Sicherheitslücken",
+        "Penetration Testing"
+      ]
+    },
+    "hephaestus": {
+      "role": "Engineering Reviewer",
+      "tools": ["linters", "formatters", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["code_quality"],
+      "responsibilities": [
+        "Code-Qualität",
+        "Best Practices"
+      ]
+    },
+    "chronos": {
+      "role": "Future-proofing",
+      "tools": ["diagramming-tools", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["skalierbarkeit"],
+      "responsibilities": [
+        "Skalierbarkeit",
+        "Langzeit-Planung"
+      ]
+    },
+    "nemesis": {
+      "role": "Failure Finder",
+      "tools": ["chaos-tools", "opencode"],
+      "output_format": "json",
+      "benchmarks": ["chaos_engineering"],
+      "responsibilities": [
+        "Bricht alles absichtlich",
+        "Schwachstellen finden"
+      ]
+    }
+  }
+}
